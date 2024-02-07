@@ -1,0 +1,210 @@
+.web-content {
+    width: 100%;
+    // height: 100vh;
+    padding: 0 15%;
+
+
+
+    #home {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 30px;
+
+
+
+        .home-content {
+            
+            .headText  {
+                display: flex;
+                flex-direction:column;
+                gap: 15px;
+                padding-top: 10rem;
+                .text-1 {
+                    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',monospace;
+                    color: var(--color1);
+                    font-size: 17px;
+                }
+    
+                .text-2 {
+                    font-size: 60px;
+                }
+                .text-3 {
+                    font-size: 33px;
+                }
+                .text-4 {
+                    font-size: 18px;
+                    font-weight: lighter;
+                    max-width: 60%;
+                }
+
+                .button-1 {
+                        // width: 50px;
+                        padding: 15px 35px;
+                        border-radius: 7px;
+                        background-color: transparent;
+                        border: 1px solid #ff530b;
+                        color: #ff530b;
+                        cursor: pointer;
+                        transition: 300ms ease;
+                    
+                    
+                        &:hover {
+                            background-color: #ff540b3d;
+                        }
+                    
+                }
+
+                
+            }
+        }
+
+    }
+
+    #about {
+        padding-top: 5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100vh;
+
+
+        .left {
+            width: 60%;
+
+            .left-head {
+                display: flex;
+                align-items: center;
+                gap: 25px;
+
+                h2 {
+
+                    font-size: 30px;
+                }
+                .line {
+                    width: 50%;
+                    height: 1px;
+                    background-color: rgb(76, 90, 128);
+                }
+            }
+            .left-content {
+                padding-top: 2rem;
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
+        .right {
+            width: 30%;
+
+
+            
+        .img-container {
+            
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .img {
+                padding-top: 44rem;
+                width: 300px;
+                height: 300px;
+                border-radius: 50%;
+                background: url(../../img/myImage2.jpg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                position: relative;
+                border: 3px solid white;          
+                padding: 20px;
+            }
+    
+            
+        }
+        }
+    }
+
+    #certificate {
+        padding-top: 50px;
+        
+
+        
+
+
+        .certificate-head {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+
+            h2 {
+                font-size: 30px;
+            }
+            .line {
+                width: 50%;
+                height: 1px;
+                background-color: rgb(76, 90, 128);
+            }
+        }
+        .certificates-container {
+
+            padding-top: 2rem;
+        }
+    }
+
+
+    footer {
+        height: 30vh;
+        .footer-content {
+            
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+            a {
+                color: rgb(127 148 199);
+                text-decoration: none;
+                transition: 200ms ease-in-out;
+
+                &:hover {
+                    color: var(--color1);
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
