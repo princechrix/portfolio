@@ -65,7 +65,8 @@ function App() {
           <div className="link"> <a href="#" className={iconsStyles}><FontAwesomeIcon icon={faLinkedin} /></a></div>
           <div className="link"> <a href="#" className={iconsStyles}><FontAwesomeIcon icon={faFacebook} /></a></div>
           <div className="link"> <a href="#" className={iconsStyles}><FontAwesomeIcon icon={faInstagram} /></a></div>
-          <div className="link"> <a href="#" className={iconsStyles}><FontAwesomeIcon icon={faTwitter} /></a></div>
+          {/* <div className="link"> <a href="#" className={iconsStyles}><FontAwesomeIcon icon={faTwitter} /></a></div> */}
+          
           
           <div className="line" style={lineStyles}></div>
         </div>

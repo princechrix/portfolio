@@ -4,18 +4,22 @@ import Logo from '../../img/icon.png';
 
 // UI COMPONENTS
 import ButtonUi from '../ui/buttonUI';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 const NavbarComp = ({scrolled}) => {
 
-    
+    const [isClicked, setIsClicked] = useState(false);
+
+    const toggleHighlight = (e) => {
+        setIsClicked(!isClicked)
+    }
 
     useEffect(()=>{
-        const menuBtn = document.getElementById('menuBtn');
-        const NavLinksContainer = document.getElementById('navLinks')
-        menuBtn.addEventListener('click', () => {
-            NavLinksContainer.classList.toggle('showNavLinks')
-        })
+        // const menuBtn = document.getElementById('menuBtn');
+        // const NavLinksContainer = document.getElementById('navLinks')
+        // menuBtn.addEventListener('click', () => {
+        //     NavLinksContainer.classList.toggle('showNavLinks')
+        // })
     }, [])
     
     return ( 
@@ -29,7 +33,7 @@ const NavbarComp = ({scrolled}) => {
                         <img src={Logo} alt="" />
                     </div>
                 </div>
-                <div className="right-side" id='navLinks'>
+                <div className={`right-side ${isClicked ? 'showNavLinks': ''}`} id='navLinks'>
                     <ul>
                         <a href="#about">
                             <li>About</li>
@@ -46,7 +50,7 @@ const NavbarComp = ({scrolled}) => {
                     </div>
                 </div>
                 <div className="menu-icon-container">
-                    <div className='menu-icon' id="menuBtn">
+                    <div className='menu-icon' onClick={toggleHighlight} id="menuBtn">
                         <span className='line'></span>
                         <span className='line'></span>
                         <span className='line'></span>
