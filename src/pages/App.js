@@ -57,7 +57,7 @@ function App() {
 
   return (
     <div className="web" style={bodyStyle}>
-      <NavbarComp />
+      <NavbarComp scrolled={ scrolled ? true : false} />
       <ContentComp /> 
       <div className="left-right-Stuff">
         <div className="left">

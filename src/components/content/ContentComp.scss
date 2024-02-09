@@ -101,13 +101,13 @@
 
             
         .img-container {
-            
             width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-
+            
             .img {
+                object-fit: cover;
                 padding-top: 44rem;
                 width: 300px;
                 height: 300px;
@@ -119,6 +119,7 @@
                 position: relative;
                 border: 3px solid white;          
                 padding: 20px;
+                
             }
     
             
@@ -157,6 +158,11 @@
     footer {
         height: 30vh;
         .footer-content {
+
+
+            .socialMedia {
+                display: none;
+            }
             
             width: 100%;
             display: flex;
@@ -180,10 +186,7 @@
 
 
 
-
-
-
-
+// ABOUT SWIPPER
 
 .swiper {
     width: 100%;
@@ -208,3 +211,159 @@
     object-fit: cover;
   }
   
+
+//   ABOUT MEDIA QUERIES
+
+
+@media screen and (max-width:767px) { 
+
+    .web-content {
+
+        padding: 0 10%;
+        #home { 
+          .home-content {
+            .headText {
+              padding-top: 6rem; 
+              
+
+              .text-2 {
+                font-size: 40px;
+              }
+
+              .text-3 {
+                font-size: 20px;
+              }
+              .text-4 {
+                max-width: 100%;
+              }
+              
+              .button-1 {
+                width: 100%;
+              }
+            } 
+          }
+        }
+
+        #about {
+            
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-between;
+            align-items: center;
+            // height: 80vh;
+
+
+    
+    
+            .left {
+                width: 100%;
+
+                .img-container {
+                
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 30px;
+        
+                    .img {
+                        padding-top: 44rem;
+                        width: 100%;
+                        height: 300px;
+                        border-radius: 5px;
+                        background: url(../../img/myImage2.jpg);
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        position: relative;
+                        border: 3px solid white;          
+                        padding: 20px;
+                        z-index: -2;
+                    }
+            
+                    
+                }
+    
+                .left-head {
+                    display: flex;
+                    align-items: center;
+                    gap: 25px;
+    
+                    h2 {
+    
+                        font-size: 30px;
+                    }
+                    .line {
+                        width: 50%;
+                        height: 1px;
+                        background-color: rgb(76, 90, 128);
+                    }
+                }
+                .left-content {
+                    padding-top: 2rem;
+                    p {
+                        font-size: 18px;
+                    }
+                }
+            }
+            .right {
+                display: none;
+                width: 30%;
+    
+    
+                
+            .img-container {
+                
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+                .img {
+                    padding-top: 44rem;
+                    width: 300px;
+                    height: 300px;
+                    border-radius: 50%;
+                    background: url(../../img/myImage2.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    position: relative;
+                    border: 3px solid white;          
+                    padding: 20px;
+                }
+        
+                
+            }
+            }
+        }
+        #certificate {
+            display: none;
+        }
+
+
+        footer {
+            .footer-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 30px;
+                
+
+                .socialMedia {
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 30px;
+
+                    a {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+      }
+      
+}

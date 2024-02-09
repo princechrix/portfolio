@@ -18,6 +18,14 @@ import slide_image_3 from "../../img/certificate/img_3.png";
 import slide_image_4 from "../../img/certificate/img_4.png";
 import slide_image_5 from "../../img/certificate/img_5.png";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { 
+  faGithub, 
+  faLinkedin, 
+  faFacebook,
+  faInstagram 
+} from '@fortawesome/free-brands-svg-icons';
+
 
 
 const ContentComp = () => {
@@ -51,8 +59,13 @@ const ContentComp = () => {
             <div className="line"></div>
           </div>
           <div className="left-content">
+          <div className="img-container">
+            {/* <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M86,61Q80,72,71,79Q62,86,48.5,90.5Q35,95,26,84.5Q17,74,14,62Q11,50,11,35.5Q11,21,24.5,17.5Q38,14,50,13Q62,12,72.5,19Q83,26,87.5,38Q92,50,86,61Z" stroke="#000" stroke-width="1" fill="none"></path></svg> */}
+            {/* <img src={myImg} alt=""/> */}
+            <div className="img"></div>
+          </div>
             <p>
-              Hey there! I'm Blessing, a software enthusiast chilling out in
+              Hey there! I'm Prince, a software enthusiast chilling out in
               sunny Kigali, Rwanda. <br />
               <br />
               Picture this: the moment I typed "Hello world" into my first app,
@@ -116,7 +129,16 @@ const ContentComp = () => {
 
       <footer>
         <div className="footer-content">
-          <a href="">Designed & Built by Prince Christian</a>
+          
+          <div className="socialMedia">
+            <div className="link"> <a href="https://github.com/princechrix" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a></div>
+            <div className="link"> <a href="https://github.com/princechrix" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedin} /></a></div>
+            <div className="link"> <a href="https://github.com/princechrix" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faFacebook} /></a></div>
+            <div className="link"> <a href="https://github.com/princechrix" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faInstagram} /></a></div>
+          </div>
+            
+
+          <a href="https://github.com/princechrix">Designed & Built by Prince Christian</a>
         </div>
       </footer>
     </div>

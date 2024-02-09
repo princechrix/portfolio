@@ -4,11 +4,22 @@ import Logo from '../../img/icon.png';
 
 // UI COMPONENTS
 import ButtonUi from '../ui/buttonUI';
+import { useEffect } from 'react';
 
-const NavbarComp = () => {
+const NavbarComp = ({scrolled}) => {
+
+    
+
+    useEffect(()=>{
+        const menuBtn = document.getElementById('menuBtn');
+        const NavLinksContainer = document.getElementById('navLinks')
+        menuBtn.addEventListener('click', () => {
+            NavLinksContainer.classList.toggle('showNavLinks')
+        })
+    }, [])
     
     return ( 
-        <nav>
+        <nav className={scrolled ? 'StickyonPhone': 'navabar'}>
             <div className="nav-wave">
                 <img src={WaveImg} alt="" />
             </div>
@@ -18,7 +29,7 @@ const NavbarComp = () => {
                         <img src={Logo} alt="" />
                     </div>
                 </div>
-                <div className="right-side">
+                <div className="right-side" id='navLinks'>
                     <ul>
                         <a href="#about">
                             <li>About</li>
@@ -32,6 +43,13 @@ const NavbarComp = () => {
                     </ul>
                     <div className="button-container">
                     <ButtonUi text="Resume"/>
+                    </div>
+                </div>
+                <div className="menu-icon-container">
+                    <div className='menu-icon' id="menuBtn">
+                        <span className='line'></span>
+                        <span className='line'></span>
+                        <span className='line'></span>
                     </div>
                 </div>
             </div>
