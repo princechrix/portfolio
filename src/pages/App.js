@@ -1,14 +1,13 @@
 import './App.scss';
 import NavbarComp from '../components/navbar/NavbarComp';
 import ContentComp from '../components/content/ContentComp';
-import footerComp from '../components/footer/footerComp';
+
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
   faGithub, 
   faLinkedin, 
   faFacebook, 
-  faTwitter, 
   faInstagram 
 } from '@fortawesome/free-brands-svg-icons';
 import { useEffect, useState } from 'react';
@@ -61,10 +60,10 @@ function App() {
       <ContentComp /> 
       <div className="left-right-Stuff">
         <div className="left">
-          <div className="link"> <a href="#" className={iconsStyles}><FontAwesomeIcon icon={faGithub} /></a></div>
-          <div className="link"> <a href="#" className={iconsStyles}><FontAwesomeIcon icon={faLinkedin} /></a></div>
-          <div className="link"> <a href="#" className={iconsStyles}><FontAwesomeIcon icon={faFacebook} /></a></div>
-          <div className="link"> <a href="#" className={iconsStyles}><FontAwesomeIcon icon={faInstagram} /></a></div>
+          <div className="link"> <a target="_blank" rel="noreferrer" href="https://github.com/princechrix" className={iconsStyles}><FontAwesomeIcon icon={faGithub} /></a></div>
+          <div className="link"> <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/ishimwe-prince-christian-514098294/" className={iconsStyles}><FontAwesomeIcon icon={faLinkedin} /></a></div>
+          <div className="link"> <a target="_blank" rel="noreferrer" href="https://www.facebook.com/profile.php?id=100087798158779" className={iconsStyles}><FontAwesomeIcon icon={faFacebook} /></a></div>
+          <div className="link"> <a target="_blank" rel="noreferrer" href="https://www.instagram.com/kayihura_prince/" className={iconsStyles}><FontAwesomeIcon icon={faInstagram} /></a></div>
           {/* <div className="link"> <a href="#" className={iconsStyles}><FontAwesomeIcon icon={faTwitter} /></a></div> */}
           
           

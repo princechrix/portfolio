@@ -132,9 +132,9 @@ const ContentComp = () => {
           
           <div className="socialMedia">
             <div className="link"> <a href="https://github.com/princechrix" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a></div>
-            <div className="link"> <a href="https://github.com/princechrix" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedin} /></a></div>
-            <div className="link"> <a href="https://github.com/princechrix" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faFacebook} /></a></div>
-            <div className="link"> <a href="https://github.com/princechrix" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faInstagram} /></a></div>
+            <div className="link"> <a href="https://www.linkedin.com/in/ishimwe-prince-christian-514098294/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedin} /></a></div>
+            <div className="link"> <a href="https://www.facebook.com/profile.php?id=100087798158779" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faFacebook} /></a></div>
+            <div className="link"> <a href="https://www.instagram.com/kayihura_prince/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faInstagram} /></a></div>
           </div>
             
 

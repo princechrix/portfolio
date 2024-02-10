@@ -35,13 +35,13 @@ const NavbarComp = ({scrolled}) => {
                 </div>
                 <div className={`right-side ${isClicked ? 'showNavLinks': ''}`} id='navLinks'>
                     <ul>
-                        <a href="#about">
+                        <a href="#about" onClick={toggleHighlight}>
                             <li>About</li>
                         </a>
-                        <a href="#certificate">
+                        <a href="#certificate" style={{display: isClicked ? 'none' : 'block'}} onClick={toggleHighlight}>
                             <li>Certificates</li>
                         </a>
-                        <a href="mailto:princechrix.dev@gmail.com">
+                        <a href="mailto:princechrix.dev@gmail.com" onClick={toggleHighlight}>
                             <li>Contact</li>
                         </a>
                     </ul>
